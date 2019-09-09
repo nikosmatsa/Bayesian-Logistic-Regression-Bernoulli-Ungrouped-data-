@@ -34,3 +34,8 @@ fit =  stan(model_code = nasa,
 
 print(fit, digits = 3)
 plot(fit)
+
+stan_dens(fit)
+stan_hist(fit)
+pairs(fit)
+plot(fit, plotfun = "trace")
