@@ -1,3 +1,5 @@
+library(rstan)
+
 nasa <- '
 data {                          
 int<lower=0> N;                       // number of observations
