@@ -39,3 +39,9 @@ stan_dens(fit)
 stan_hist(fit)
 pairs(fit)
 plot(fit, plotfun = "trace")
+
+
+
+invlogit <- function (x) {1/(1+exp(x))}
+invlogit (19.016 +(-0.291)*mean(thermal))
+round(exp(-0.291),2)
