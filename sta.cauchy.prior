@@ -9,8 +9,8 @@ real b_0;                           // intercept
 real b_1;                            // beta for thermal
 }
 model {
-b_0  ~ cauchy(0,1);
-b_1 ~ cauchy(0,1);
+b_0  ~ cauchy(0,10);
+b_1 ~ cauchy(0,10);
 for (n in 1:N)
       y[n] ~ bernoulli(inv_logit(b_0 + b_1 * x[n]));
 }
